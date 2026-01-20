@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+body {
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    gap: 5vw;
+    color: black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    transition: all .5s ease;
+}
+
+.Scrolled{
+    background-color: #1E3A8A;
+}
+
+.UnScrolled{
+    background-color: transparent;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search img {
+    position: relative;
+    left: 30px;
+    width: 1vw;
+}
+
+.search .searchBox {
+    font-family: "Saira",sans-serif;
+    width: 30vw;
+    height: 5vh;
+    border-radius: 8px;
+    border: 2px solid #adadad;
+    padding-left: 2vw;
+    font-size: 0.9rem;
+    background-color: #cfecf7;
+}
+
+input::placeholder {
+    color: hsl(0, 0%, 38%);
+    /* opacity: 1; */
+}
+
+.middle ul {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    font-size: 1.3rem;
+    font-family: "Saira", "Roboto Condensed";
+    font-weight: 400;
+}
+
+.white{
+    color: white;
+}
+
+.black{
+    color:black;
+}
+
+.middle ul li {
+    transition: transform .2s ease;
+    list-style: none;
+    cursor: pointer;
+}
+
+
+.middle ul li:hover{
+    transform: scale(1.1);
+    font-weight: 400;
+}
+
+.middle ul li select {
+    background-color: transparent;
+    border: none;
+}
+
+.cartImg img {
+    width: 2.2vw;
+}
+
+.noFilter{
+    filter: none;
+}
+
+.filter{
+    filter: invert(1);
+}

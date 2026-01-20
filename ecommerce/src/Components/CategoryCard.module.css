@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 26vw;
+    height: 12vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.container>* {
+    cursor: pointer;
+}
+
+.info {
+    position: absolute;
+    margin-left: 1.6%;
+    margin-bottom: 1%;
+    z-index: 2;
+
+}
+
+.info>* {
+    margin: 0;
+    margin-bottom: 8px;
+    font-family: "Nuinto Sans", sans-serif;
+}
+
+.categoryTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.totalItems {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.btnExplore {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #0000000f;
+    color: white;
+    border: 1px solid #c7c7c7;
+    transition: all .3s ease-in-out;
+}
+
+
+.layer {
+    position: absolute;
+    width: 26%;
+    height: 12vw;
+    border: none;
+    border-radius: 8px;
+    background-color: hsla(0, 0%, 0%, 0.141);
+    z-index: 1;
+    transition: all .3s ease;
+}
+
+.bgImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: transform .3s ease-in-out;
+    /* position: absolute; */
+}
+
+.container:hover .bgImage {
+    transform: scale(1.2);
+}
+
+.container:hover .layer {
+    background-color: hsl(0deg 0% 0% / 9%);
+}
+
+.btnExplore:hover {
+    color: black;
+    background-color: white;
+}

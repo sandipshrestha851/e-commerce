@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+.foryouSection{
+    margin-top: 6vw;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h2{
+    margin: 10px;
+    font-size: 2rem;
+    font-family: "Changa One",sans-serif;
+    font-weight: lighter;
+}
+
+.heading p{
+    font-family: "Saira",sans-serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: hsla(0, 0%, 0%, 0.912);
+    margin-bottom: 2vw;
+}
+
+.container{
+    width: 68%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
