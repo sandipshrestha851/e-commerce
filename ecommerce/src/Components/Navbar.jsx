@@ -28,13 +28,15 @@ function Navbar() {
                         <li>Home</li>
                         <li>shop</li>
                         <li>Sale</li>
-                        <li>Category
-                            <select className={scrolled?styles.white:styles.black}>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
+                        <li>
+                            <select className={`${scrolled?styles.white:styles.black} ${scrolled?styles.Scrolled:styles.UnScrolled}`}>
+                                <option selected>Category</option>
+                                <option>Accessories</option>
+                                <option>Household Items</option>
+                                <option>Clothing</option>
+                                <option>Electronics</option>
+                                <option>Gym</option>
+                                <option>Beauty Care</option>
                             </select>
                         </li>
                     </ul>
