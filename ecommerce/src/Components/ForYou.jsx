@@ -5,7 +5,7 @@ import picture from '../assets/winter.png'
 function ForYou(){
 
     return(
-        <div className={styles.foryouSection}>
+        <div className={styles.foryouSection} id="forYou">
                 <div className = {styles.heading}>
                     <h2>For You</h2>
                     <p>These are exactly the things you are looking for</p>

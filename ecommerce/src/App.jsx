@@ -6,6 +6,7 @@ import ForYou from './Components/ForYou.jsx'
 import Footer from './Components/Footer.jsx'
 import Card from './Components/Card.jsx'
 import picture from './assets/winter.png'
+import './App.css'
 
 import CategoryCard from './Components/CategoryCard.jsx'
 

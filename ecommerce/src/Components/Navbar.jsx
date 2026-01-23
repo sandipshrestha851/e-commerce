@@ -25,9 +25,9 @@ function Navbar() {
                     </div>
                     <div className={styles.middle}>
                     <ul className={scrolled?styles.white:styles.black}>
-                        <li>Home</li>
-                        <li>shop</li>
-                        <li>Sale</li>
+                        <li><a href="#" className={scrolled?styles.white:styles.black}>Home</a></li>
+                        <li><a href="#bestSeller" className={scrolled?styles.white:styles.black}>Best Seller</a></li>
+                        <li><a href="#forYou" className={scrolled?styles.white:styles.black}>For You</a></li>
                         <li>
                             <select className={`${scrolled?styles.white:styles.black} ${scrolled?styles.Scrolled:styles.UnScrolled}`}>
                                 <option selected>Category</option>
