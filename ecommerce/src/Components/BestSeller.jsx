@@ -5,7 +5,7 @@ import picture from '../assets/winter.png'
 function BestSeller(){
     return(
         <div className={styles.bestSection} id="bestSeller">
-        <div className = {styles.heading}>
+        <div className = {styles.heading}>  
             <h2>Best Seller</h2>
             <p>The product everyone is talking about.</p>
         </div>
