@@ -1,0 +1,16 @@
+
+{
+"products":[
+  {"productKey":1,"MainImage":"/src/assetsProduct/wallet1.png","title":"Leather Wallet","price":25,"discount":5,"subImage1":"/src/assetsProduct/wallet1.png","subImage2":"/src/assetsProduct/wallet2.png","category":"Accessories"},
+  {"productKey":2,"MainImage":"/src/assetsProduct/sung1.png","title":"Sunglasses","price":40,"discount":10,"subImage1":"/src/assetsProduct/sung1.png","subImage2":"/src/assetsProduct/sung2.png","category":"Accessories"},
+  {"productKey":3,"MainImage":"/src/assetsProduct/watch1.png","title":"Wrist Watch","price":150,"discount":20,"subImage1":"/src/assetsProduct/watch1.png","subImage2":"/src/assetsProduct/watch2.png","category":"Accessories"},
+
+  {"productKey":4,"MainImage":"/src/assetsProduct/vase1.png","title":"Ceramic Vase","price":30,"discount":5,"subImage1":"/src/assetsProduct/vase1.png","subImage2":"/src/assetsProduct/vase2.png","category":"Household Items"},
+  {"productKey":5,"MainImage":"/src/assetsProduct/chair1.png","title":"Wooden Chair","price":120,"discount":15,"subImage1":"/src/assetsProduct/chair1.png","subImage2":"/src/assetsProduct/chair2.png","category":"Household Items"},
+  {"productKey":6,"MainImage":"/src/assetsProduct/clock1.png","title":"Wall Clock","price":45,"discount":10,"subImage1":"/src/assetsProduct/clock1.png","subImage2":"/src/assetsProduct/clock2.png","category":"Household Items"},
+
+  {"productKey":7,"MainImage":"/src/assetsProduct/jacket1.png","title":"Denim Jacket","price":80,"discount":10,"subImage1":"/src/assetsProduct/jacket1.png","subImage2":"/src/assetsProduct/jacket2.png","category":"Clothing"},
+  {"productKey":8,"MainImage":"/src/assetsProduct/shirt1.png","title":"Cotton T-Shirt","price":20,"discount":5,"subImage1":"/src/assetsProduct/shirt1.png","subImage2":"/src/assetsProduct/shirt2.png","category":"Clothing"},
+  {"productKey":9,"MainImage":"/src/assetsProduct/shoes1.png","title":"Running Shoes","price":60,"discount":15,"subImage1":"/src/assetsProduct/shoes1.png","subImage2":"/src/assetsProduct/shoes2.png","category":"Clothing"}
+]
+}
