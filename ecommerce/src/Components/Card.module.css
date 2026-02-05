@@ -39,6 +39,7 @@ body {
 }
 
 .title {
+    color: black;
     font-weight: 400;
     font-size: 1.3rem;
     overflow-wrap: break-word;
