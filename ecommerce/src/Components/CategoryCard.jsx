@@ -1,5 +1,5 @@
 import styles from './CategoryCard.module.css'
-
+import {NavLink} from 'react-router-dom'
 function CategoryCard({src,title,items}){
 
     // function hoverEff(){
@@ -14,7 +14,7 @@ function CategoryCard({src,title,items}){
                 <div className={styles.info}>
                     <h3 className={styles.categoryTitle}>{title}</h3>
                     <p className={styles.totalItems}>{items}+ items</p>
-                    <button className={styles.btnExplore}>Explore</button>
+                    <NavLink className={styles.NavLink} to={`/category/${title}`}><button className={styles.btnExplore}>Explore</button></NavLink>
                 </div>
                 <div className={styles.layer}></div>
                 <img src={src} alt="background-image-card" className={styles.bgImage} />

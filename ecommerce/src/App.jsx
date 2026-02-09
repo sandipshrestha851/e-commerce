@@ -7,6 +7,7 @@ import Category from './Components/Category.jsx'
 import ForYou from './Components/ForYou.jsx'
 import Footer from './Components/Footer.jsx'
 import ProductPage from './Components/ProductPage.jsx'
+import SingleCategory from './Components/SingleCategory.jsx'
 import Card from './Components/Card.jsx'
 import picture from './assets/winter.png'
 import './App.css'
@@ -40,11 +41,20 @@ function App() {
         </ProductsKeys.Provider>
       </>
     },
+    {
+      path: "/category/:category",
+      element: <>
+      <ProductsKeys.Provider value ={{key,setKey}}>
+        <Navbar />
+        <SingleCategory />
+        </ProductsKeys.Provider>
+      </>
+    },
   ])
 
   return (
     <>
-
+   
       <RouterProvider router={router} />
     </>
   )
