@@ -2,6 +2,7 @@ import styles from './Navbar.module.css'
 import cart from '../assets/cart.svg'
 import search from '../assets/search.png'
 import {useState, useEffect} from 'react';
+import {NavLink} from 'react-router-dom';
 
 function Navbar() {
 
@@ -29,15 +30,10 @@ function Navbar() {
                         <li><a href="#bestSeller" className={scrolled?styles.white:styles.black}>Best Seller</a></li>
                         <li><a href="#forYou" className={scrolled?styles.white:styles.black}>For You</a></li>
                         <li>
-                            <select className={`${scrolled?styles.white:styles.black} ${scrolled?styles.Scrolled:styles.UnScrolled}`}>
-                                <option selected>Category</option>
-                                <option>Accessories</option>
-                                <option>Household Items</option>
-                                <option>Clothing</option>
-                                <option>Electronics</option>
-                                <option>Gym</option>
-                                <option>Beauty Care</option>
-                            </select>
+                            <button className={styles.SignBtn}>Sign Up</button>
+                        </li>
+                        <li>
+                            <button className={styles.LoginBtn}>Log in</button>
                         </li>
                     </ul>
                     </div>

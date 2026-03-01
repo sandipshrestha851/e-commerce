@@ -103,9 +103,33 @@ input::placeholder {
 }
 
 .Scrolled{
-    background-color: #1E3A8A;
+    background-color: #154867;
 }
 
 .UnScrolled{
     background-color: transparent;
+}
+
+.SignBtn{
+    padding: 11px 20px;
+    border-radius: 40px;
+    border: none;
+    background-color:hsl(196deg 100% 40.26%);
+    font-family: "Saira", "Roboto Condensed";
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.LoginBtn{
+    padding: 11px 20px;
+    border-radius: 40px;
+    border: none;
+    background-color: orangered;
+    font-family: "Saira", "Roboto Condensed";
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1.1rem;
 }
