@@ -12,6 +12,7 @@ import Card from './Components/Card.jsx'
 import picture from './assets/winter.png'
 import './App.css'
 import CategoryCard from './Components/CategoryCard.jsx'
+import Signup from './Components/Signup.jsx'
 
 export const ProductsKeys = createContext();
 function App() {
@@ -47,6 +48,14 @@ function App() {
       <ProductsKeys.Provider value ={{key,setKey}}>
         <Navbar />
         <SingleCategory />
+        </ProductsKeys.Provider>
+      </>
+    },
+    {
+      path: "/signup",
+      element: <>
+      <ProductsKeys.Provider value ={{key,setKey}}>
+        <Signup/>
         </ProductsKeys.Provider>
       </>
     },
