@@ -1,34 +1,27 @@
 import React from 'react'
 import {useState} from 'react'
-import styles from "./Signup.module.css"
+import styles from "./Login.module.css"
 
-const Signup = () => {
+const Login = () => {
 
     const [email,setEmail] = useState("");
     const [pass,setPass] = useState("");
-    const [confirm,setConfirm] = useState("");
     const [checkPass,setCheckPass] = useState(true);
 
 
     function updateEmail(e) {
         let value = e.target.value;
         setEmail(value);
-        localStorage.setItem("email",value);
     }
 
     function updatePass(e) {
         let value = e.target.value;
         setPass(value);
-        localStorage.setItem("password",value);
-    }
-
-    function updateConfirm(e) {
-        setConfirm(e.target.value);
     }
 
     function Validity(e){
         
-        if(pass!=confirm){
+        if(pass!=localStorage.getItem("password") || email!=localStorage.getItem("email") ){
             setCheckPass(false);
             e.preventDefault();
             return false;
@@ -39,17 +32,16 @@ const Signup = () => {
     return (
         <div className={styles.Root}>
             <div className={styles.Container}>
-                <h1 className={styles.Heading}>Sign Up</h1>
+                <h1 className={styles.Heading}>Login</h1>
                 <form onSubmit={Validity} className={styles.formInputs} >
                     <input type="email" id="email" placeholder="Email" onChange={updateEmail} /><br />
                     <input type="password" id="password" placeholder="Password" onChange={updatePass} /><br />
-                    <input type="password" id="confirm" placeholder="Confirm Password" onChange={updateConfirm}  />
-                    <p className={checkPass?styles.invisible:styles.visible}>Password doesnot match!</p>
-                <button type="submit" className={styles.signupBtn}>Sign Up</button>
+                    <p className={checkPass?styles.invisible:styles.visible}>Invalid email or password !</p>
+                <button type="submit" className={styles.LoginBtn}>Login</button>
                 </form>
             </div>
         </div>
     )
 }
 
-export default Signup;
+export default Login;

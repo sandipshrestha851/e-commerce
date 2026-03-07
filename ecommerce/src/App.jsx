@@ -13,6 +13,7 @@ import picture from './assets/winter.png'
 import './App.css'
 import CategoryCard from './Components/CategoryCard.jsx'
 import Signup from './Components/Signup.jsx'
+import Login from './Components/Login.jsx'
 
 export const ProductsKeys = createContext();
 function App() {
@@ -56,6 +57,14 @@ function App() {
       element: <>
       <ProductsKeys.Provider value ={{key,setKey}}>
         <Signup/>
+        </ProductsKeys.Provider>
+      </>
+    },
+    {
+      path: "/login",
+      element: <>
+      <ProductsKeys.Provider value ={{key,setKey}}>
+        <Login/>
         </ProductsKeys.Provider>
       </>
     },
