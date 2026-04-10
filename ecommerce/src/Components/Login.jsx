@@ -22,7 +22,7 @@ const Login = () => {
 
     function updatePass(e) {
         let value = e.target.value;
-        setPass(value);
+        setPass(value); 
     }
 
     function Validity(e) {
