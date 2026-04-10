@@ -1,13 +1,18 @@
 import React from 'react'
 import { useState } from 'react'
+import {useNavigate} from 'react-router-dom'
 import styles from "./Login.module.css"
+import loader from "../assets/success.mp4"
 
 const Login = () => {
+
+    const navigate = useNavigate();
 
     const [email, setEmail] = useState("");
     const [pass, setPass] = useState("");
     const [checkPass, setCheckPass] = useState(true);
     const [checkAll, setCheckAll] = useState(true);
+    const [success, setSuccess] = useState(false);
 
 
     function updateEmail(e) {
@@ -21,17 +26,16 @@ const Login = () => {
     }
 
     function Validity(e) {
+        e.preventDefault();
         if (pass == "" || email == "") {
             setCheckAll(false);
-            e.preventDefault();
             setInterval(() => {
                 setCheckAll(true);
             }, 5000);
             return false;
         }
-        else if(pass != localStorage.getItem("password") || email != localStorage.getItem("email")) {
+        else if (pass != localStorage.getItem("password") || email != localStorage.getItem("email")) {
             setCheckPass(false);
-            e.preventDefault();
             setInterval(() => {
                 setCheckPass(true);
             }, 5000);
@@ -40,11 +44,18 @@ const Login = () => {
         else {
             setCheckAll(true);
             setCheckPass(true);
+            setSuccess(true);
+            setTimeout(() => {
+                navigate("/")
+            }, 3000);
         }
 
     }
     return (
         <div className={styles.Root}>
+            <video width="100" autoPlay muted loop playsInline className={`${styles.Loader} ${success ? styles.see : styles.noSee}`}>
+                <source src={loader} type="video/mp4" />
+            </video>
             <div className={styles.Container}>
                 <h1 className={styles.Heading}>Login</h1>
                 <form onSubmit={Validity} className={styles.formInputs} >

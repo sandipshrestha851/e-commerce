@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 import styles from "./Signup.module.css"
-import { BrowserRouter } from 'react-router-dom'
 // import Login from "./Login.jsx"
 import {useNavigate} from 'react-router-dom'
 
@@ -33,10 +32,10 @@ const Signup = () => {
     }
 
     function Validity(e) {
-        
+        e.preventDefault();
         if (email == "" || pass == "" || confirm == "") {
             setCheckAll(false);
-            e.preventDefault();
+            
             setTimeout(() => {
                 setCheckAll(true);
             }, 5000);
@@ -44,7 +43,6 @@ const Signup = () => {
         }
         if (pass != confirm) {
             setCheckPass(false);
-            e.preventDefault();
             setTimeout(() => {
                 setCheckPass(true);
             }, 5000);
@@ -52,9 +50,7 @@ const Signup = () => {
         }
             localStorage.setItem("email", email);
             localStorage.setItem("password", pass);
-            // <BrowserRouter>
-            //     navigate("/login");
-            // </BrowserRouter> 
+            navigate("/login");
     }
 
     return (

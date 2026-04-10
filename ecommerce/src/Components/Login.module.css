@@ -74,3 +74,15 @@ input {
 .invisible{
     display: none;
 }
+
+.see{
+    opacity: 0.8;
+}
+
+.noSee{
+    opacity: 0;
+}
+
+.Loader{
+    position: absolute;
+}
