@@ -12,7 +12,7 @@ import Card from './Components/Card.jsx'
 import picture from './assets/winter.png'
 import './App.css'
 import CategoryCard from './Components/CategoryCard.jsx'
-import Signup from './Components/Signup.jsx'
+import Signup from './Components/signup.jsx'
 import Login from './Components/Login.jsx'
 
 export const ProductsKeys = createContext();

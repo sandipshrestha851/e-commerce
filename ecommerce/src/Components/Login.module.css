@@ -59,10 +59,12 @@ input {
     background-color: hsl(16, 100%, 40%);
 }
 
-p{
+.warningTxt{
     font-family: "Saira",sans-serif;
     font-weight: 500;
     color: red;
+    margin: 0;
+    padding: 0;
 }
 
 .visible{

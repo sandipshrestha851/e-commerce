@@ -30,10 +30,10 @@ function Navbar() {
                         <li><a href="#bestSeller" className={scrolled?styles.white:styles.black}>Best Seller</a></li>
                         <li><a href="#forYou" className={scrolled?styles.white:styles.black}>For You</a></li>
                         <li>
-                            <button className={styles.SignBtn}>Sign Up</button>
+                           <NavLink className={styles.NavLink} to="/signup"><button className={styles.SignBtn}>Sign Up</button></NavLink>
                         </li>
                         <li>
-                            <button className={styles.LoginBtn}>Log in</button>
+                            <NavLink className={styles.NavLink} to="/login"><button className={styles.LoginBtn}>Log in</button></NavLink>
                         </li>
                     </ul>
                     </div>

@@ -1,39 +1,60 @@
 import React from 'react'
-import {useState} from 'react'
+import { useState } from 'react'
 import styles from "./Signup.module.css"
+import { BrowserRouter } from 'react-router-dom'
+// import Login from "./Login.jsx"
+import {useNavigate} from 'react-router-dom'
 
 const Signup = () => {
 
-    const [email,setEmail] = useState("");
-    const [pass,setPass] = useState("");
-    const [confirm,setConfirm] = useState("");
-    const [checkPass,setCheckPass] = useState(true);
+    const navigate = useNavigate();
+    const [email, setEmail] = useState("");
+    const [pass, setPass] = useState("");
+    const [confirm, setConfirm] = useState("");
+    const [checkPass, setCheckPass] = useState(true);
+    const [checkAll, setCheckAll] = useState(true);
 
 
     function updateEmail(e) {
         let value = e.target.value;
         setEmail(value);
-        localStorage.setItem("email",value);
+
+        console.log(localStorage.getItem("email"));
     }
 
     function updatePass(e) {
         let value = e.target.value;
         setPass(value);
-        localStorage.setItem("password",value);
+
     }
 
     function updateConfirm(e) {
         setConfirm(e.target.value);
     }
 
-    function Validity(e){
+    function Validity(e) {
         
-        if(pass!=confirm){
+        if (email == "" || pass == "" || confirm == "") {
+            setCheckAll(false);
+            e.preventDefault();
+            setTimeout(() => {
+                setCheckAll(true);
+            }, 5000);
+            return false;
+        }
+        if (pass != confirm) {
             setCheckPass(false);
             e.preventDefault();
+            setTimeout(() => {
+                setCheckPass(true);
+            }, 5000);
             return false;
-        }                             
-            setCheckPass(true);
+        }
+            localStorage.setItem("email", email);
+            localStorage.setItem("password", pass);
+            // <BrowserRouter>
+            //     navigate("/login");
+            // </BrowserRouter> 
     }
 
     return (
@@ -43,9 +64,10 @@ const Signup = () => {
                 <form onSubmit={Validity} className={styles.formInputs} >
                     <input type="email" id="email" placeholder="Email" onChange={updateEmail} /><br />
                     <input type="password" id="password" placeholder="Password" onChange={updatePass} /><br />
-                    <input type="password" id="confirm" placeholder="Confirm Password" onChange={updateConfirm}  />
-                    <p className={checkPass?styles.invisible:styles.visible}>Password doesnot match!</p>
-                <button type="submit" className={styles.signupBtn}>Sign Up</button>
+                    <input type="password" id="confirm" placeholder="Confirm Password" onChange={updateConfirm} />
+                    <p className={`${styles.warningTxt} ${checkAll ? styles.invisible : styles.visible}`}>Email or Password cannot be Empty!</p>
+                    <p className={`${styles.warningTxt} ${checkPass ? styles.invisible : styles.visible}`}>Password doesnot match!</p>
+                    <button type="submit" className={styles.signupBtn}>Sign Up</button>
                 </form>
             </div>
         </div>

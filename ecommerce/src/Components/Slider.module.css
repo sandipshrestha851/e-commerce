@@ -36,6 +36,7 @@ html{
     border-radius: 0 50% 50% 0;
     background-color: #6d6d6d;
     cursor: pointer;
+    /* z-index:0; */
 }
 
 .right{
@@ -46,4 +47,5 @@ html{
     border-radius: 50% 0 0 50%;
     background-color: #6d6d6d;
     cursor:pointer;
+    /* z-index:0; */
 }
