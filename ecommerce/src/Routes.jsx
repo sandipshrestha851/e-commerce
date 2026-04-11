@@ -20,6 +20,7 @@ export const router = createBrowserRouter([
             {
                 path: "/",
                 element: <>
+                    <Navbar />
                     <Slider />
                     <BestSeller />
                     <Category />
@@ -30,27 +31,29 @@ export const router = createBrowserRouter([
             {
                 path: "/products/:key",
                 element: <>
+                    <Navbar />
                     <ProductPage />
                 </>
             },
             {
                 path: "/category/:category",
                 element: <>
+                    <Navbar />
                     <SingleCategory />
                 </>
             },
+            {
+                path: "/signup",
+                element: <>
+                    <Signup />
+                </>
+            },
+            {
+                path: "/login",
+                element: <>
+                        <Login />
+                </>
+            },
         ]
-    },
-    {
-        path: "/signup",
-        element: <>
-            <Signup />
-        </>
-    },
-    {
-        path: "/login",
-        element: <>
-            <Login />
-        </>
-    },
+    }
 ])

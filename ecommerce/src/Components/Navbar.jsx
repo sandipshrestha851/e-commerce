@@ -1,13 +1,16 @@
 import styles from './Navbar.module.css'
 import cart from '../assets/cart.svg'
 import search from '../assets/search.png'
-import {useState, useEffect} from 'react';
+import {useState, useEffect,useContext} from 'react';
 import {NavLink} from 'react-router-dom';
+import logo from '../assets/logo.png'
+import {ProductsKeys} from '../App.jsx'
 
 function Navbar() {
-
+    const {loggedIn,setLoggedIn} = useContext(ProductsKeys);
     const [scrolled , setScrolled] = useState(false);
 
+    const email = "@" + localStorage.getItem("email").split("@")[localStorage.getItem("email").split("@").length-2];
     useEffect(()=>{
         window.addEventListener('scroll',()=>{
             setScrolled(window.scrollY>10);
@@ -17,8 +20,8 @@ function Navbar() {
     return (
         <div>
             <nav className={`${styles.navbar} ${scrolled?styles.Scrolled:styles.UnScrolled}`}>
-                <div className={styles.logo} >
-                    <img src="" alt="logo" />
+                <div >
+                    <img className={styles.logo} src={logo} alt="logo" />
                     </div>
                     <div className={styles.search}>
                         <img src={search} alt="search-icon"/>
@@ -30,10 +33,13 @@ function Navbar() {
                         <li><a href="#bestSeller" className={scrolled?styles.white:styles.black}>Best Seller</a></li>
                         <li><a href="#forYou" className={scrolled?styles.white:styles.black}>For You</a></li>
                         <li>
-                           <NavLink className={styles.NavLink} to="/signup"><button className={styles.SignBtn}>Sign Up</button></NavLink>
+                            <p className={`${styles.user} ${loggedIn ? styles.visible : styles.invisible}`}>{email}</p>
                         </li>
                         <li>
-                            <NavLink className={styles.NavLink} to="/login"><button className={styles.LoginBtn}>Log in</button></NavLink>
+                           <NavLink className={styles.NavLink} to="/signup"><button className={`${styles.SignBtn} ${loggedIn ? styles.invisible : styles.visible}`}>Sign Up</button></NavLink>
+                        </li>
+                        <li>
+                            <NavLink className={styles.NavLink} to="/login"><button className={`${styles.LoginBtn} ${loggedIn ? styles.invisible : styles.visible}`}>Log in</button></NavLink>
                         </li>
                     </ul>
                     </div>

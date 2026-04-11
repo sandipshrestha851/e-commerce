@@ -1,11 +1,13 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState,useContext } from 'react'
 import {useNavigate} from 'react-router-dom'
 import styles from "./Login.module.css"
 import loader from "../assets/success.mp4"
+import {ProductsKeys} from '../App.jsx'
 
 const Login = () => {
-
+    
+    const {loggedIn,setLoggedIn} = useContext(ProductsKeys);
     const navigate = useNavigate();
 
     const [email, setEmail] = useState("");
@@ -45,6 +47,7 @@ const Login = () => {
             setCheckAll(true);
             setCheckPass(true);
             setSuccess(true);
+            setLoggedIn(true);
             setTimeout(() => {
                 navigate("/")
             }, 3000);

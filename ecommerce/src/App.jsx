@@ -6,12 +6,12 @@ import './App.css'
 export const ProductsKeys = createContext();
 function App() {
 
-  const [key , setKey] = useState()
+  const [key , setKey] = useState();
+  const [loggedIn,setLoggedIn] = useState(false);
 
   return (
     <>
-    <ProductsKeys.Provider value={{key,setKey}}>
-      <Navbar/>
+    <ProductsKeys.Provider value={{key,setKey,loggedIn,setLoggedIn}}>
       <Outlet/>
     </ProductsKeys.Provider>
     </>
