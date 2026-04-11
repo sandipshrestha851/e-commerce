@@ -10,9 +10,7 @@ function Navbar() {
     const { loggedIn, setLoggedIn } = useContext(ProductsKeys);
     const [scrolled, setScrolled] = useState(false);
 
-    if (localStorage.getItem("email") !== "") {
-        const email = "@" + localStorage.getItem("email").split("@")[localStorage.getItem("email").split("@").length - 2];
-    }
+        // const email = "@" + localStorage.getItem("email").split("@")[localStorage.getItem("email").split("@").length - 2];
     useEffect(() => {
         window.addEventListener('scroll', () => {
             setScrolled(window.scrollY > 10);
@@ -34,9 +32,9 @@ function Navbar() {
                         <li><a href="#" className={scrolled ? styles.white : styles.black}>Home</a></li>
                         <li><a href="#bestSeller" className={scrolled ? styles.white : styles.black}>Best Seller</a></li>
                         <li><a href="#forYou" className={scrolled ? styles.white : styles.black}>For You</a></li>
-                        <li>
+                        {/* <li>
                             <p className={`${styles.user} ${loggedIn ? styles.visible : styles.invisible}`}>{email}</p>
-                        </li>
+                        </li> */}
                         <li>
                             <NavLink className={styles.NavLink} to="/signup"><button className={`${styles.SignBtn} ${loggedIn ? styles.invisible : styles.visible}`}>Sign Up</button></NavLink>
                         </li>
