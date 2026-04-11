@@ -3,17 +3,12 @@ import {Outlet} from 'react-router-dom'
 import Navbar from './Components/Navbar.jsx'
 import './App.css'
 
-export const ProductsKeys = createContext();
-function App() {
 
-  const [key , setKey] = useState();
-  const [loggedIn,setLoggedIn] = useState(false);
+function App() {
 
   return (
     <>
-    <ProductsKeys.Provider value={{key,setKey,loggedIn,setLoggedIn}}>
       <Outlet/>
-    </ProductsKeys.Provider>
     </>
     );
 }

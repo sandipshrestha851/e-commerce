@@ -3,7 +3,7 @@ import { useState,useContext } from 'react'
 import {useNavigate} from 'react-router-dom'
 import styles from "./Login.module.css"
 import loader from "../assets/success.mp4"
-import {ProductsKeys} from '../App.jsx'
+import {ProductsKeys} from '../main.jsx'
 
 const Login = () => {
     

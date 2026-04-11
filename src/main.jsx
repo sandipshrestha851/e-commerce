@@ -1,11 +1,22 @@
-import {RouterProvider} from 'react-router-dom'
-import { createRoot } from 'react-dom/client'
-import React from 'react'
-import './index.css'
-import {router} from './Routes.jsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { HashRouter } from "react-router-dom";
+import AppRoutes from "./Routes.jsx";
+// import { ProductsKeys } from "./App.jsx";
+import { useState,createContext } from "react";
 
-createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-     <RouterProvider router={router}/>
-  </React.StrictMode>
-)
+export const ProductsKeys = createContext();
+function Root() {
+  const [key, setKey] = useState();
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  return (
+    <ProductsKeys.Provider value={{ key, setKey, loggedIn, setLoggedIn }}>
+      <HashRouter>
+        <AppRoutes />
+      </HashRouter>
+    </ProductsKeys.Provider>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<Root />);

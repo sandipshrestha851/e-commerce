@@ -3,7 +3,7 @@ import Card from './Card.jsx'
 import {useState,useEffect,useContext} from 'react'
 import picture from '../assets/winter.png'
 import {NavLink,useParams} from 'react-router-dom'
-import {ProductsKeys} from '../App.jsx';
+import {ProductsKeys} from '../main.jsx';
 
 function BestSeller(){
     const {key,setKey} = useContext(ProductsKeys);

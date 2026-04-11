@@ -4,7 +4,7 @@ import search from '../assets/search.png'
 import {useState, useEffect,useContext} from 'react';
 import {NavLink} from 'react-router-dom';
 import logo from '../assets/logo.png'
-import {ProductsKeys} from '../App.jsx'
+import {ProductsKeys} from '../main.jsx'
 
 function Navbar() {
     const {loggedIn,setLoggedIn} = useContext(ProductsKeys);
