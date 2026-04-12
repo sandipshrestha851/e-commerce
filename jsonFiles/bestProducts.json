@@ -93,6 +93,96 @@
   ],
   "totalProducts": [
     {
+      "productKey": 1,
+      "MainImage": "/e-commerce/assetsProduct/wallet1.png",
+      "title": "Leather Wallet",
+      "price": 25,
+      "discount": 5,
+      "subImage1": "/e-commerce/assetsProduct/wallet1.png",
+      "subImage2": "/e-commerce/assetsProduct/wallet2.png",
+      "category": "Accessories"
+    },
+    {
+      "productKey": 2,
+      "MainImage": "/e-commerce/assetsProduct/sung1.png",
+      "title": "Sunglasses",
+      "price": 40,
+      "discount": 10,
+      "subImage1": "/e-commerce/assetsProduct/sung1.png",
+      "subImage2": "/e-commerce/assetsProduct/sung2.png",
+      "category": "Accessories"
+    },
+    {
+      "productKey": 3,
+      "MainImage": "/e-commerce/assetsProduct/watch1.png",
+      "title": "Wrist Watch",
+      "price": 150,
+      "discount": 20,
+      "subImage1": "/e-commerce/assetsProduct/watch1.png",
+      "subImage2": "/e-commerce/assetsProduct/watch2.png",
+      "category": "Accessories"
+    },
+    {
+      "productKey": 4,
+      "MainImage": "/e-commerce/assetsProduct/vase1.png",
+      "title": "Ceramic Vase",
+      "price": 30,
+      "discount": 5,
+      "subImage1": "/e-commerce/assetsProduct/vase1.png",
+      "subImage2": "/e-commerce/assetsProduct/vase2.png",
+      "category": "Household Items"
+    },
+    {
+      "productKey": 5,
+      "MainImage": "/e-commerce/assetsProduct/chair1.png",
+      "title": "Wooden Chair",
+      "price": 120,
+      "discount": 15,
+      "subImage1": "/e-commerce/assetsProduct/chair1.png",
+      "subImage2": "/e-commerce/assetsProduct/chair2.png",
+      "category": "Household Items"
+    },
+    {
+      "productKey": 6,
+      "MainImage": "/e-commerce/assetsProduct/clock1.png",
+      "title": "Wall Clock",
+      "price": 45,
+      "discount": 10,
+      "subImage1": "/e-commerce/assetsProduct/clock1.png",
+      "subImage2": "/e-commerce/assetsProduct/clock2.png",
+      "category": "Household Items"
+    },
+    {
+      "productKey": 7,
+      "MainImage": "/e-commerce/assetsProduct/jacket1.png",
+      "title": "Denim Jacket",
+      "price": 80,
+      "discount": 10,
+      "subImage1": "/e-commerce/assetsProduct/jacket1.png",
+      "subImage2": "/e-commerce/assetsProduct/jacket2.png",
+      "category": "Clothing"
+    },
+    {
+      "productKey": 8,
+      "MainImage": "/e-commerce/assetsProduct/shirt1.png",
+      "title": "Cotton T-Shirt",
+      "price": 20,
+      "discount": 5,
+      "subImage1": "/e-commerce/assetsProduct/shirt1.png",
+      "subImage2": "/e-commerce/assetsProduct/shirt2.png",
+      "category": "Clothing"
+    },
+    {
+      "productKey": 9,
+      "MainImage": "/e-commerce/assetsProduct/shoes1.png",
+      "title": "Running Shoes",
+      "price": 60,
+      "discount": 15,
+      "subImage1": "/e-commerce/assetsProduct/shoes1.png",
+      "subImage2": "/e-commerce/assetsProduct/shoes2.png",
+      "category": "Clothing"
+    },
+    {
       "productKey": 10,
       "MainImage": "/e-commerce/assetsProduct/phone1.png",
       "title": "Smartphone",
