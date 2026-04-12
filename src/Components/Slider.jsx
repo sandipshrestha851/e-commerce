@@ -4,7 +4,7 @@ import switch2 from '../assets/right.svg'
 // import { useState } from 'react'
 
 function Slider() {
-    let images = ['/images/image1.png', '/images/image2.png','./images/image3.png','./images/image4.png'];
+    let images = [`${import.meta.env.BASE_URL}images/image1.png`, `${import.meta.env.BASE_URL}images/image2.png`,`${import.meta.env.BASE_URL}images/image3.png`,`${import.meta.env.BASE_URL}images/image4.png`];
     // const [index , setIndex] = useState(0);
     let index = 0;
 
