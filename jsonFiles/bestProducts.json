@@ -1,0 +1,186 @@
+{
+  "products": [
+    {
+      "productKey": 1,
+      "MainImage": "/src/assetsProduct/wallet1.png",
+      "title": "Leather Wallet",
+      "price": 25,
+      "discount": 5,
+      "subImage1": "/src/assetsProduct/wallet1.png",
+      "subImage2": "/src/assetsProduct/wallet2.png",
+      "category": "Accessories"
+    },
+    {
+      "productKey": 2,
+      "MainImage": "/src/assetsProduct/sung1.png",
+      "title": "Sunglasses",
+      "price": 40,
+      "discount": 10,
+      "subImage1": "/src/assetsProduct/sung1.png",
+      "subImage2": "/src/assetsProduct/sung2.png",
+      "category": "Accessories"
+    },
+    {
+      "productKey": 3,
+      "MainImage": "/src/assetsProduct/watch1.png",
+      "title": "Wrist Watch",
+      "price": 150,
+      "discount": 20,
+      "subImage1": "/src/assetsProduct/watch1.png",
+      "subImage2": "/src/assetsProduct/watch2.png",
+      "category": "Accessories"
+    },
+    {
+      "productKey": 4,
+      "MainImage": "/src/assetsProduct/vase1.png",
+      "title": "Ceramic Vase",
+      "price": 30,
+      "discount": 5,
+      "subImage1": "/src/assetsProduct/vase1.png",
+      "subImage2": "/src/assetsProduct/vase2.png",
+      "category": "Household Items"
+    },
+    {
+      "productKey": 5,
+      "MainImage": "/src/assetsProduct/chair1.png",
+      "title": "Wooden Chair",
+      "price": 120,
+      "discount": 15,
+      "subImage1": "/src/assetsProduct/chair1.png",
+      "subImage2": "/src/assetsProduct/chair2.png",
+      "category": "Household Items"
+    },
+    {
+      "productKey": 6,
+      "MainImage": "/src/assetsProduct/clock1.png",
+      "title": "Wall Clock",
+      "price": 45,
+      "discount": 10,
+      "subImage1": "/src/assetsProduct/clock1.png",
+      "subImage2": "/src/assetsProduct/clock2.png",
+      "category": "Household Items"
+    },
+    {
+      "productKey": 7,
+      "MainImage": "/src/assetsProduct/jacket1.png",
+      "title": "Denim Jacket",
+      "price": 80,
+      "discount": 10,
+      "subImage1": "/src/assetsProduct/jacket1.png",
+      "subImage2": "/src/assetsProduct/jacket2.png",
+      "category": "Clothing"
+    },
+    {
+      "productKey": 8,
+      "MainImage": "/src/assetsProduct/shirt1.png",
+      "title": "Cotton T-Shirt",
+      "price": 20,
+      "discount": 5,
+      "subImage1": "/src/assetsProduct/shirt1.png",
+      "subImage2": "/src/assetsProduct/shirt2.png",
+      "category": "Clothing"
+    },
+    {
+      "productKey": 9,
+      "MainImage": "/src/assetsProduct/shoes1.png",
+      "title": "Running Shoes",
+      "price": 60,
+      "discount": 15,
+      "subImage1": "/src/assetsProduct/shoes1.png",
+      "subImage2": "/src/assetsProduct/shoes2.png",
+      "category": "Clothing"
+    }
+  ],
+  "totalProducts": [
+    {
+      "productKey": 10,
+      "MainImage": "/src/assetsProduct/phone1.png",
+      "title": "Smartphone",
+      "price": 500,
+      "discount": 10,
+      "subImage1": "/src/assetsProduct/phone1.png",
+      "subImage2": "/src/assetsProduct/phone2.png",
+      "category": "Electronics"
+    },
+    {
+      "productKey": 11,
+      "MainImage": "/src/assetsProduct/laptop1.png",
+      "title": "Laptop",
+      "price": 900,
+      "discount": 15,
+      "subImage1": "/src/assetsProduct/laptop1.png",
+      "subImage2": "/src/assetsProduct/laptop2.png",
+      "category": "Electronics"
+    },
+    {
+      "productKey": 12,
+      "MainImage": "/src/assetsProduct/headphone1.png",
+      "title": "Wireless Headphones",
+      "price": 120,
+      "discount": 20,
+      "subImage1": "/src/assetsProduct/headphone1.png",
+      "subImage2": "/src/assetsProduct/headphone2.png",
+      "category": "Electronics"
+    },
+    {
+      "productKey": 13,
+      "MainImage": "/src/assetsProduct/dumbbell1.png",
+      "title": "Dumbbell Set",
+      "price": 70,
+      "discount": 10,
+      "subImage1": "/src/assetsProduct/dumbbell1.png",
+      "subImage2": "/src/assetsProduct/dumbbell2.png",
+      "category": "Gym"
+    },
+    {
+      "productKey": 14,
+      "MainImage": "/src/assetsProduct/yogamat1.png",
+      "title": "Yoga Mat",
+      "price": 25,
+      "discount": 5,
+      "subImage1": "/src/assetsProduct/yogamat1.png",
+      "subImage2": "/src/assetsProduct/yogamat2.png",
+      "category": "Gym"
+    },
+    {
+      "productKey": 15,
+      "MainImage": "/src/assetsProduct/skipping1.png",
+      "title": "Skipping Rope",
+      "price": 15,
+      "discount": 5,
+      "subImage1": "/src/assetsProduct/skipping1.png",
+      "subImage2": "/src/assetsProduct/skipping2.png",
+      "category": "Gym"
+    },
+    {
+      "productKey": 19,
+      "MainImage": "/src/assetsProduct/lipstick1.png",
+      "title": "Matte Lipstick",
+      "price": 18,
+      "discount": 10,
+      "subImage1": "/src/assetsProduct/lipstick1.png",
+      "subImage2": "/src/assetsProduct/lipstick2.png",
+      "category": "Beauty"
+    },
+    {
+      "productKey": 20,
+      "MainImage": "/src/assetsProduct/foundation1.png",
+      "title": "Liquid Foundation",
+      "price": 28,
+      "discount": 10,
+      "subImage1": "/src/assetsProduct/foundation1.png",
+      "subImage2": "/src/assetsProduct/foundation2.png",
+      "category": "Beauty"
+    },
+    {
+      "productKey": 21,
+      "MainImage": "/src/assetsProduct/perfume1.png",
+      "title": "Perfume",
+      "price": 55,
+      "discount": 20,
+      "subImage1": "/src/assetsProduct/perfume1.png",
+      "subImage2": "/src/assetsProduct/perfume2.png",
+      "category": "Beauty"
+    }
+  ]
+}
