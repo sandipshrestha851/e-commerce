@@ -21,7 +21,7 @@ const ProductPage = () => {
   useEffect(() => {
     async function getProducts() {
       try {
-        let res = await fetch('/jsonFiles/bestProducts.json');
+        let res = await fetch(`${import.meta.env.BASE_URL}jsonFiles/bestProducts.json`);
         data = await res.json();
         // setProducts(data.products);
         const found = data.totalProducts.find(product=> product.productKey == params.key);
