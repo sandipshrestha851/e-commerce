@@ -11,7 +11,7 @@ const SingleCategory = () => {
     useEffect(() => {
         async function getProducts() {
             try{
-            let res = await fetch('/jsonFiles/bestProducts.json');
+            let res = await fetch(`${import.meta.env.BASE_URL}jsonFiles/bestProducts.json`)
             let data = await res.json();
             let found = data.doubledProducts.filter(product => product.category == params.category);
 

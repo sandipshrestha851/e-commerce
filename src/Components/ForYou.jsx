@@ -9,7 +9,7 @@ function ForYou() {
 
     useEffect(() => {
         const getProducts = async () => {
-            let res = await fetch("/jsonFiles/bestProducts.json");
+            let res = await fetch(`${import.meta.env.BASE_URL}jsonFiles/bestProducts.json`)
             let data = await res.json();
             setProducts(data.totalProducts);
         }
