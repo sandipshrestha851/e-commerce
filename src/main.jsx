@@ -7,7 +7,7 @@ import { useState,createContext } from "react";
 
 export const ProductsKeys = createContext();
 function Root() {
-  const [key, setKey] = useState();
+  const [key, setKey] = useState(null);
   const [loggedIn, setLoggedIn] = useState(false);
 
   return (

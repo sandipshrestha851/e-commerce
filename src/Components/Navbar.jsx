@@ -41,6 +41,9 @@ function Navbar() {
                         <li>
                             <NavLink className={styles.NavLink} to="/login"><button className={`${styles.LoginBtn} ${loggedIn ? styles.invisible : styles.visible}`}>Log in</button></NavLink>
                         </li>
+                        <li>
+                            <NavLink className={styles.NavLink} to="/signup"><button className={`${styles.RegisterBtn} ${loggedIn ? styles.invisible : styles.visible}`}>Register</button></NavLink>
+                        </li>
                     </ul>
                 </div>
                 <div className={styles.cartImg}>
