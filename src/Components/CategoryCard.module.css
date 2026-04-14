@@ -2,6 +2,7 @@
 
 
 .container {
+    position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -21,11 +22,9 @@
 
 .info {
     position: absolute;
-    margin-left: 1.6%;
-    margin-bottom: 1%;
+    margin-left: 5%;
+    margin-bottom: 5%;
     z-index: 2;
-    
-
 }
 
 .info>* {
@@ -36,19 +35,19 @@
 }
 
 .categoryTitle {
-    font-size: 1.8rem;
+    font-size: 1.4vw;
     font-weight: bold;
 }
 
 .totalItems {
-    font-size: 1rem;
+    font-size: 1.2vw;
     font-weight: 200;
 }
 
 .btnExplore {
     padding: 10px;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 1vw;
     border: none;
     border-radius: 8px;
     background-color: #0000000f;
@@ -60,8 +59,7 @@
 
 .layer {
     position: absolute;
-    width: 26%;
-    height: 12vw;
+    inset: 0;
     border: none;
     border-radius: 8px;
     background-color: hsla(0, 0%, 0%, 0.141);
@@ -76,7 +74,6 @@
     object-fit: cover;
     opacity: 0.7;
     transition: transform .3s ease-in-out;
-    /* position: absolute; */
 }
 
 .container:hover .bgImage {
@@ -90,4 +87,12 @@
 .btnExplore:hover {
     color: black;
     background-color: white;
+}
+
+/* Media Query */
+@media(width<1450px) {
+    .container {
+        width: 30vw;
+        height: 14vw;
+    }
 }

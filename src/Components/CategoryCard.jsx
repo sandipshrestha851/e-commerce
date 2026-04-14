@@ -9,7 +9,6 @@ function CategoryCard({src,title,items}){
     // }
 
     return(
-        <div>
             <div className={styles.container}>
                 <div className={styles.info}>
                     <h3 className={styles.categoryTitle}>{title}</h3>
@@ -19,7 +18,6 @@ function CategoryCard({src,title,items}){
                 <div className={styles.layer}></div>
                 <img src={src} alt="background-image-card" className={styles.bgImage} />
             </div>
-        </div>
     )
 }
 
