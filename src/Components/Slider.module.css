@@ -49,3 +49,24 @@ html {
     cursor: pointer;
     /* z-index:0; */
 }
+
+@media(width<1150px) {
+    .sliderContainer {
+        width: 79%;
+        height: 59vh;
+    }
+}
+
+@media(width<800px) {
+    .sliderContainer {
+        width: 92%;
+        height: 54vh;
+    }
+}
+
+@media(width<800px) {
+    .sliderContainer {
+        width: 92%;
+        height: 47vh;
+    }
+}
