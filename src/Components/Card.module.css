@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 190px;
+    width: 242px;
     height: 36vh;
     transition: transform ease-in-out .2s;
     cursor: pointer;
@@ -63,4 +63,10 @@ body {
 
 .titleNPrice span {
     margin-left: 0.6vw;
+}
+
+@media(width<700px){
+    .cardContainer{
+        width:31vw;
+    }
 }

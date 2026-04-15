@@ -70,3 +70,9 @@ html {
         height: 47vh;
     }
 }
+
+@media(width<600px) {
+    .sliderContainer {
+        margin: 119px auto 0px auto;
+    }
+}
