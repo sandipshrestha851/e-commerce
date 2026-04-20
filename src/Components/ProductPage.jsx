@@ -50,6 +50,7 @@ const ProductPage = () => {
   }
 
   return (
+    <div className={styles.root}>
     <div className={styles.Container}>
       <div className={styles.left}>
         <div className={styles.mainImage}>
@@ -98,6 +99,7 @@ const ProductPage = () => {
           <button className={`${styles.cartBtn} ${styles.cBtn}`}>Add to Cart</button>
         </div>
       </div>
+    </div>
     </div>
   )
 }
