@@ -13,7 +13,7 @@ const SingleCategory = () => {
             try{
             let res = await fetch(`${import.meta.env.BASE_URL}jsonFiles/bestProducts.json`)
             let data = await res.json();
-            let found = data.doubledProducts.filter(product => product.category == params.category);
+            let found = data.totalProducts.filter(product => product.category == params.category);
 
             if (found) {
                 setProducts(found);
@@ -26,6 +26,7 @@ const SingleCategory = () => {
     },[])
 
     return (
+        <div className={styles.root}>
         <div className={styles.Container}>
             <h1 className={styles.heading}>{params.category}</h1>
             <p className={styles.Text}>Is this what you are looking for?</p>
@@ -38,6 +39,7 @@ const SingleCategory = () => {
                 })
             }
             </div>
+        </div>
         </div>
     )
 }
